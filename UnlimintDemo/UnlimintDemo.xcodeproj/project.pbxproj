@@ -66,6 +66,7 @@
 		BE2C017D28E22910003EA745 /* UnlimintDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BE2C01B128E2496C003EA745 /* Journey */,
 				BE2C019228E22F25003EA745 /* Clients */,
 				BE2C017E28E22910003EA745 /* AppDelegate.swift */,
 				BE2C018028E22910003EA745 /* SceneDelegate.swift */,
@@ -81,7 +82,6 @@
 		BE2C019228E22F25003EA745 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
-				BE2C01B128E2496C003EA745 /* Journey */,
 				BE2C019328E22F25003EA745 /* HTTPClient */,
 			);
 			path = Clients;
