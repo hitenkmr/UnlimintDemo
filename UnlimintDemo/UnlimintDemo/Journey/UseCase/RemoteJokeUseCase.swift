@@ -15,7 +15,8 @@ public class RemoteJokeUseCase {
 public typealias Joke = String
 
 extension RemoteJokeUseCase: JokeUseCase {
-    public func getJoke(url: URL, completion: @escaping ((Result<Joke, Swift.Error>) -> Void)) {
+    public func getJoke(completion: @escaping ((Result<Joke, Swift.Error>) -> Void)) {
+        let url = URL(string: "https://geek-jokes.sameerkumar.website/api")!
         client.get(from: url) { [weak self] result in
             guard self != nil else { return }
             
@@ -38,16 +39,4 @@ extension RemoteJokeUseCase: JokeUseCase {
         }
     }
 }
-
-struct Jokes {
-    
-    /// Represents different errors that may occur on the journey screens
-    public enum Error : Swift.Error {
-        case notConnected
-        case refreshFailure
-        case invalidData
-        case emptyData
-    }
-}
-
 

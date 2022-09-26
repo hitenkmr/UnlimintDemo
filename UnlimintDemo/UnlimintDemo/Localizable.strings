@@ -1,0 +1,10 @@
+// File for localized content
+
+// MARK: - Common Errors
+
+"alerts.error.options.ok" = "OK";
+"alerts.error.title" = "Error";
+"alerts.error.notConnected.message" = "Seems like you are not connected to the internet";
+"alerts.error.refreshFailure.message" = "Failed to refresh facilities";
+"alerts.error.invalidData.message" = "The data is livalid";
+"alerts.error.emptyData.message" = "There is no facilities to show";
