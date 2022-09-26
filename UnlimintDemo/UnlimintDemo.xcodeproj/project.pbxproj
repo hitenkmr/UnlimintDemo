@@ -15,6 +15,9 @@
 		BE2C018B28E22912003EA745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2C018928E22912003EA745 /* LaunchScreen.storyboard */; };
 		BE2C019D28E22F25003EA745 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C019428E22F25003EA745 /* URLSessionHTTPClient.swift */; };
 		BE2C019E28E22F25003EA745 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C019528E22F25003EA745 /* HTTPClient.swift */; };
+		BE2C01B628E2496C003EA745 /* JokeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C01B328E2496C003EA745 /* JokeUseCase.swift */; };
+		BE2C01B728E2496C003EA745 /* JokeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C01B428E2496C003EA745 /* JokeMapper.swift */; };
+		BE2C01B828E2496C003EA745 /* RemoteJokeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2C01B528E2496C003EA745 /* RemoteJokeUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		BE2C018C28E22912003EA745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE2C019428E22F25003EA745 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		BE2C019528E22F25003EA745 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		BE2C01B328E2496C003EA745 /* JokeUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeUseCase.swift; sourceTree = "<group>"; };
+		BE2C01B428E2496C003EA745 /* JokeMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeMapper.swift; sourceTree = "<group>"; };
+		BE2C01B528E2496C003EA745 /* RemoteJokeUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteJokeUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		BE2C019228E22F25003EA745 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				BE2C01B128E2496C003EA745 /* Journey */,
 				BE2C019328E22F25003EA745 /* HTTPClient */,
 			);
 			path = Clients;
@@ -87,6 +94,24 @@
 				BE2C019528E22F25003EA745 /* HTTPClient.swift */,
 			);
 			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		BE2C01B128E2496C003EA745 /* Journey */ = {
+			isa = PBXGroup;
+			children = (
+				BE2C01B228E2496C003EA745 /* UseCase */,
+			);
+			path = Journey;
+			sourceTree = "<group>";
+		};
+		BE2C01B228E2496C003EA745 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				BE2C01B328E2496C003EA745 /* JokeUseCase.swift */,
+				BE2C01B428E2496C003EA745 /* JokeMapper.swift */,
+				BE2C01B528E2496C003EA745 /* RemoteJokeUseCase.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2C01B828E2496C003EA745 /* RemoteJokeUseCase.swift in Sources */,
+				BE2C01B628E2496C003EA745 /* JokeUseCase.swift in Sources */,
 				BE2C018328E22910003EA745 /* ViewController.swift in Sources */,
 				BE2C019E28E22F25003EA745 /* HTTPClient.swift in Sources */,
 				BE2C017F28E22910003EA745 /* AppDelegate.swift in Sources */,
 				BE2C018128E22910003EA745 /* SceneDelegate.swift in Sources */,
 				BE2C019D28E22F25003EA745 /* URLSessionHTTPClient.swift in Sources */,
+				BE2C01B728E2496C003EA745 /* JokeMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
